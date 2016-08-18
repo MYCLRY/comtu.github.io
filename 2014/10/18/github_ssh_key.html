@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Comtu" />
+  <meta name="keywords" content="GitHub," />
 
 
 
@@ -84,15 +84,16 @@
 
 
 
-<meta name="description" content="The time is passing">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Comtu">
-<meta property="og:url" content="http://comtu.github.com/archives/2015/10/index.html">
+<meta name="description" content="Github配置SSH key作用是使用git提交时可以使用git@github.com:comtu/comtu.github.io.git 的地址,直接 push 数据到github网站,无需要使用Https链接每次push数据输入用户名密码">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Github配置SSH key">
+<meta property="og:url" content="http://comtu.github.com/2014/10/18/github_ssh_key.html">
 <meta property="og:site_name" content="Comtu">
-<meta property="og:description" content="The time is passing">
+<meta property="og:description" content="Github配置SSH key作用是使用git提交时可以使用git@github.com:comtu/comtu.github.io.git 的地址,直接 push 数据到github网站,无需要使用Https链接每次push数据输入用户名密码">
+<meta property="og:updated_time" content="2016-08-18T06:21:54.338Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Comtu">
-<meta name="twitter:description" content="The time is passing">
+<meta name="twitter:title" content="Github配置SSH key">
+<meta name="twitter:description" content="Github配置SSH key作用是使用git提交时可以使用git@github.com:comtu/comtu.github.io.git 的地址,直接 push 数据到github网站,无需要使用Https链接每次push数据输入用户名密码">
 
 
 
@@ -113,9 +114,9 @@
 
 
 
-  <link rel="canonical" href="http://comtu.github.com/archives/2015/10/"/>
+  <link rel="canonical" href="http://comtu.github.com/2014/10/18/github_ssh_key.html"/>
 
-  <title> 归档 | Comtu </title>
+  <title> Github配置SSH key | Comtu </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -146,7 +147,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left  page-archive  ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -274,73 +275,229 @@
           <div id="content" class="content">
             
 
-  <section id="posts" class="posts-collapse">
-    <span class="archive-move-on"></span>
-
-    <span class="archive-page-counter">
-      
-      
-      
-        
-      
-      嗯..! 目前共计 28 篇日志。 继续努力。
-    </span>
-
+  <div id="posts" class="posts-expand">
     
 
-      
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                Github配置SSH key
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2014-10-18T00:00:00+08:00" content="2014-10-18">
+              2014-10-18
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/GitHub/" itemprop="url" rel="index">
+                    <span itemprop="name">GitHub</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2014/10/18/github_ssh_key.html#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="/2014/10/18/github_ssh_key.html" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/2014/10/18/github_ssh_key.html" class="leancloud_visitors" data-flag-title="Github配置SSH key">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
       
       
 
       
+        <h1 id="Github配置SSH-key"><a href="#Github配置SSH-key" class="headerlink" title="Github配置SSH key"></a>Github配置SSH key</h1><p>作用是使用git提交时可以使用<br>git@github.com:comtu/comtu.github.io.git 的地址,<br>直接 push 数据到github网站,<br>无需要使用Https链接每次push数据输入用户名密码</p>
+<a id="more"></a>
+<h2 id="步骤一"><a href="#步骤一" class="headerlink" title="步骤一:"></a>步骤一:</h2><p>使用Git Bash生成新的ssh key。</p>
+<pre><code>$ cd ~  #保证当前路径在”~”下
+$ ssh-keygen -t rsa -C &quot;xxxxxx@yy.com&quot;  #建议填写自己真实有效的邮箱地址
+
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/xxxx_000/.ssh/id_rsa):   #不填直接回车
+Enter passphrase (empty for no passphrase):   #输入密码（可以为空）
+Enter same passphrase again:   #再次确认密码（可以为空）
+Your identification has been saved in /c/Users/xxxx_000/.ssh/id_rsa.   #生成的密钥
+Your public key has been saved in /c/Users/xxxx_000/.ssh/id_rsa.pub.  #生成的公钥
+The key fingerprint is:
+e3:51:33:xx:xx:xx:xx:xxx:61:28:83:e2:81 xxxxxx@yy.com
+*本机已完成ssh key设置，其存放路径为：c:/Users/xxxx_000/.ssh/下。
+注释：可生成ssh key自定义名称的密钥，默认id_rsa。
+$ ssh-keygen -t rsa -C &quot;邮箱地址&quot; -f ~/.ssh/githug_blog_keys #生成ssh key的名称为githug_blog_keys，慎用容易出现其它异常。
+</code></pre><hr>
+<h2 id="步骤二"><a href="#步骤二" class="headerlink" title="步骤二:"></a>步骤二:</h2><p>添加ssh key到GItHub</p>
+<p>公钥(id_rsa.pub)使用文本方式打开复制里面的所有内容(ctrl+A -&gt;ctrl+C 包括空格和新行)<br> –&gt; 登录Gighub网站 –&gt; settings(设置) –&gt; SSH keys –&gt; Add SSH key<br>–&gt; 输入Title(可随便填写,但建议编写有意义的名字) –&gt; 粘贴内容到Key中 –&gt; Add key</p>
+<hr>
+<h2 id="步骤三"><a href="#步骤三" class="headerlink" title="步骤三:"></a>步骤三:</h2><p>配置账户  </p>
+<pre><code>$ git config --global user.name “your_username”  #设置用户名  
+$ git config --global user.email “your_registered_github_Email”  #设置邮箱地址
+$ git config --global core.longpaths true # git clone 时显示Filename too long的解决办法
+</code></pre><p>测试ssh keys是否设置成功。</p>
+<pre><code>$ ssh -T git@github.com
+The authenticity of host &apos;github.com (192.30.253.113)&apos; can&apos;t be established.
+RSA key fingerprint is 16:27:xx:xx:xx:xx:xx:4d:eb:df:a6:48.
+Are you sure you want to continue connecting (yes/no)? yes #确认你是否继续联系，输入yes
+Warning: Permanently added &apos;github.com,192.30.253.113&apos; (RSA) to the list of known hosts.
+Enter passphrase for key &apos;/c/Users/xxxx_000/.ssh/id_rsa&apos;:  #生成ssh kye是密码为空则无此项，若设置有密码则有此项且，输入生成ssh key时设置的密码即可。
+Hi xxx! You&apos;ve successfully authenticated, but GitHub does not provide shell access. #出现词句话，说明设置成功。
+</code></pre>
+      
+    </div>
+
+    <div>
+      
         
-        <div class="collection-title">
-          <h2 class="archive-year motion-element" id="archive-year-2015">2015</h2>
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/GitHub/" rel="tag">#GitHub</a>
+          
         </div>
       
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2014/10/18/hello world.html" rel="prev" title="hello world">
+                hello world <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
       
 
       
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2015/10/10/PHP_Laravel.html" itemprop="url">
-              
-                <span itemprop="name">PHP学习笔记-Laravel框架</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2015-10-10T00:00:00+08:00"
-              content="2015-10-10" >
-          10-10
-        </time>
-      </div>
-
-    </header>
+      
+    </footer>
   </article>
 
 
 
-    
+    <div class="post-spread">
+      
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+  <a class="jiathis_button_tsina"></a>
+  <a class="jiathis_button_tqq"></a>
+  <a class="jiathis_button_weixin"></a>
+  <a class="jiathis_button_cqq"></a>
+  <a class="jiathis_button_douban"></a>
+  <a class="jiathis_button_renren"></a>
+  <a class="jiathis_button_qzone"></a>
+  <a class="jiathis_button_kaixin001"></a>
+  <a class="jiathis_button_copy"></a>
+  <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
+  <a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+  var jiathis_config={
+    hideMore:false
+  }
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
 
-  </section>
-
-  
-
+      
+    </div>
+  </div>
 
 
           </div>
           
 
+  <p>热评文章</p>
+  <div class="ds-top-threads" data-range="weekly" data-num-items="4"></div>
+
 
           
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="/2014/10/18/github_ssh_key.html"
+           data-title="Github配置SSH key" data-url="http://comtu.github.com//2014/10/18/github_ssh_key.html">
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -360,8 +517,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/res/img/icon.jpg"
@@ -431,6 +597,17 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Github配置SSH-key"><span class="nav-number">1.</span> <span class="nav-text">Github配置SSH key</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#步骤一"><span class="nav-number">1.1.</span> <span class="nav-text">步骤一:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#步骤二"><span class="nav-number">1.2.</span> <span class="nav-text">步骤二:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#步骤三"><span class="nav-number">1.3.</span> <span class="nav-text">步骤三:</span></a></li></ol></li></ol></div>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -534,11 +711,9 @@
 
 
   
-  
-    <script type="text/javascript" id="motion.page.archive">
-      $('.archive-year').velocity('transition.slideLeftIn');
-    </script>
-  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
 
 
   
